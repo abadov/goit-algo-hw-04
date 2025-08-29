@@ -28,7 +28,6 @@ def total_salary(path: str) -> tuple[str, str] | None:
 
     fh.close()
 
-    average = total / lines
-    return (f"{total:.2f}", f"{average:.2f}") if lines else None
+    return (f"{total:.2f}", f"{total / lines:.2f}") if lines else None
 
 print(total_salary('salary.txt'))
