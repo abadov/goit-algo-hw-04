@@ -30,4 +30,5 @@ def total_salary(path: str) -> tuple[str, str] | None:
 
     return (f"{total:.2f}", f"{total / lines:.2f}") if lines else None
 
-print(total_salary('salary.txt'))
+if __name__ == "__main__":
+    print(total_salary('salary.txt'))
